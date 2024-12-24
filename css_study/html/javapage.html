@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .width {
+            width: 100%;
+        }
+        .top-bar {
+            position: relative;
+            padding: 5px 0px;
+            background-color: #3a75b0;
+            height: 83px;
+        }
+
+        .in-top-bar {
+            position: relative;
+            padding: 0px 15px;
+            display: inline-block;
+            height: 73px;
+        }
+
+        .inside-top-bar {
+            position: absolute;
+            top: 50%;
+            padding: 5px 0 0 20px;
+            display: inline-block;
+            max-height: 100%;
+        }
+
+        .inside-top-bar-left {
+            display: inline-block;
+        }
+
+        .inside-top-bar-right {
+            display: inline-block;
+        }
+
+        .middle-white-bar {
+            position: relative;
+            padding: 48px 0px;
+            height: 426.78px;
+        }
+
+        .in-middle-white-bar {
+            position: relative;
+            margin: 0 auto;
+            height: 330px;
+            max-width: 1344px;
+        }
+
+        .middle-brown-bar {
+            position: relative;
+            background-color: #7a736e;
+            height: 120px;
+        }
+
+        .middle-brown-bar-inside {
+            margin: 0 auto;
+            height: 120px;
+            max-width: 1344px;
+        }
+
+
+        .in-middle-brown-bar {
+            margin: 0px auto;
+            padding: 22px 0px;
+            height: 120px;
+            max-width: 1024px;
+        }
+        
+        .bottom-bar {
+            height: 104px;
+            background-color: #eeeeee;
+        }
+
+        .bottom-bar-inside {
+            margin: 0 auto;
+            padding: 0 0 40px;
+            height: 104px;
+            max-width: 1344px;
+        }
+
+        .in-bottom-bar{
+            padding: 40px 0 0;
+            height: 64px;
+            max-width: 1344px;
+        }
+        .log-box {
+            display: inline-block;
+            height: 73px;
+            width: 125px;
+            cursor: pointer;
+        }
+        .log-image {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="top-bar width">
+        <div class="in-top-bar width">
+            <div class="log-box">
+                <img class="log-image" src="/css_study/html/KakaoTalk_20241224_164646541.png" alt=""> 
+            </div>
+            <div class="inside-top-bar">
+                <ul>
+                    <li>다운로드</li>
+                    <li>Developer Resource</li>
+                    <li>도움말</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="middle-white-bar width">
+        <div class="in-middle-white-bar width"></div>
+    </div>
+    <div class="middle-brown-bar width">
+        <div class="middle-brown-bar-inside width">
+            <div class="in-middle-brown-bar width"></div>
+        </div>
+    </div>
+    <div class="bottom-bar width">
+        <div class="bottom-bar-inside width">
+            <div class="in-bottom-bar width"></div>
+        </div>
+    </div>
+</body>
+</html>
