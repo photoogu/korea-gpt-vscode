@@ -17,8 +17,8 @@
         }
 
         function handleInputOnKeyDown(e) {
-            if(e.keyCode !== 13) {
-                return;         // if 문 내에 코드를 길게 적지 않게 하기 위해 조건문을 !== 로 작성 후 return으로 종료시킴
+            if(e.keyCode !== 13) {  // enter 키의 keycode : 13
+                return;   // if 문 내에 코드를 길게 적지 않게 하기 위해 조건문을 !== 로 작성 후 return으로 종료시킴
             }
             // const nextInput = document.querySelector("& + input");
             const nextInput = document.querySelector(".text-input2");
