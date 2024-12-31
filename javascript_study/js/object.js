@@ -17,9 +17,9 @@ const obj2 = {
     print: () => console.log(`이름: ${obj.name}, 나이: ${obj.age}`),
 }
 
-console.log (obj === obj2); // false  => 내용이 동일해도, 다른 객체임
-console.log(JSON.stringify(obj) === JSON.stringify(obj2)); // true
-console.log(JSON.stringify(obj));                          // {"name":"김영경","age":25} 
+console.log (obj === obj2); // false  => 내용이 동일해도, 다른 객체임 ("주소"가 다르기 때문!)
+console.log(JSON.stringify(obj) === JSON.stringify(obj2)); // true  
+console.log(JSON.stringify(obj));                          // {"name":"김영경","age":25}     JSON.stringify(): 괄호 안의 객체를 string 타입으로 변환
 console.log(typeof JSON.stringify(obj));                   // string 
 
 /**

@@ -14,7 +14,8 @@ const user3 = {
 const users = [user1, user2, user3];
 const usersInfoString = users.map(user => `사용자명: ${user.username}, 비밀번호: ${user.password}`);
 console.log(usersInfoString[0]);
-const userComponents = users.map(user =>        // 실무에서 사용하는 방법
+// 실무에서 사용하는 방법
+const userComponents = users.map(user =>
     `   
         <label>사용자이름</label>
         <div>${user.username}</div>
@@ -31,14 +32,14 @@ console.log(users2);
  * bbb -> ddd
  * ccc -> 제거
  */
-
-users.forEach(user => {
-    if (user.username === "bbb") {
-        user.username = "ddd";
-    }
-});
-const users3 = users.filter(user => user.username !== "ccc");
-console.log(users3);
+// ====== 내 풀이 ======
+// users.forEach(user => {
+//     if (user.username === "bbb") {
+//         user.username = "ddd";
+//     }
+// });
+// const users3 = users.filter(user => user.username !== "ccc");
+// console.log(users3);
 
 // 풀이
 const users4 = users.map(user => {
@@ -51,6 +52,7 @@ const users4 = users.map(user => {
     return user;
 }).filter(user => user.username !== "ccc");
 console.log(users4);
+
 const users5 = users.map(user => {
     if(user.username === "bbb") {
         return {
@@ -63,7 +65,7 @@ const users5 = users.map(user => {
 console.log(users5);
 
 const nums = [1, 2, 3, 4, 5];
-const nums2 = nums.map(n => n*2);
+const nums2 = nums.map(n => n * 2);
 const nums3 = nums.map(n => 0);
 const nums4 = nums.map(n => {
     if(n%2 === 0) {

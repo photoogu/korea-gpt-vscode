@@ -7,4 +7,4 @@
 console.log("hello js"); // 콘솔창에 ( ) 출력
 console.log("이름: 김영경");
 console.log("나이: 25");
-console.error("오류 출력!!");
+console.error("오류 출력!!"); // 콘솔창에 ( ) 출력 - error 형식으로

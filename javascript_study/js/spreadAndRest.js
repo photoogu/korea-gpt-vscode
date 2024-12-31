@@ -12,10 +12,10 @@ const obj2 = {
  */
 // const data1 = obj.data1;
 // const data2 = obj.data2; 이 두 줄은 밑의 한 줄과 같다.
-const {data1:d1, data2:d2} = obj;
+const {data1:d1, data2:d2} = obj;   // 객체는 { } 로 표현
 console.log(d1 ,d2);
 
-const nums = [1, 2, 3, 4, 5];
+const nums = [1, 2, 3, 4, 5];       // 배열은 [ ] 로 표현
 const [n1, n2, n3] = nums;
 console.log(n1, n2, n3);
 

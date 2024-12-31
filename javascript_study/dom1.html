@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1" class="box">
+        <input type="text">
+    </div>
+    
+    <div class="box">
+
+    </div>
+    
+    <script>
+        const idBox1 = document.getElementById("box1");
+        console.log(idBox1);
+        const boxList = document.getElementsByClassName("box");
+        console.log(boxList);
+        const divList = document.getElementsByTagName("div");
+        console.log(divList);
+
+        const idBox2 = document.querySelector("#box1");        // 하나만 들고옴     id 는 #을 붙임
+        const boxList2 = document.querySelectorAll(".box");    // 리스트로 들고옴   class 는 .을 붙임
+        const divList2 = document.querySelectorAll("div");     //                  tag 는 그대로  
+        const box = document.querySelector(".box");
+
+        boxList2[1].innerHTML = "<input />" // JS 로 div 에 input 생성
+    </script>
+</body>
+</html>

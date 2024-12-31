@@ -4,7 +4,7 @@
  * 산술연산자
  * +, -, *, /, %, **(제곱)
  */
-console.log(5 ** 2);
+console.log(5 ** 2);  // 25
 
 /**
  * 증감연산자
@@ -18,8 +18,8 @@ console.log(5 ** 2);
 console.log(1 == 1);
 console.log(1 == "1");      // true   타입 검사 X
 console.log(1 === "1");     // false  타입 검사 O ----> js 에서는 주로 ===, !== 를 사용
-console.log(1 != "1");      // false   타입 검사 X
-console.log(1 !== "1");     // true  타입 검사 O
+console.log(1 != "1");      // false  타입 검사 X
+console.log(1 !== "1");     // true   타입 검사 O
 
 /**
  * 논리연산자
@@ -48,7 +48,7 @@ console.log("김연경" ?? "김영경");  // 김연경
 
 /**
  * Not 연산
- * !, !!
+ * ! (!"" = true), !! (!!"" = false)
  */
 console.log("--------Not 연산--------");
 console.log(!"");       // true
