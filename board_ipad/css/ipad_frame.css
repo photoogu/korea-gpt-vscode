@@ -18,10 +18,12 @@
 }
 
 .ipad-header {
+    box-sizing: border-box;
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 15px;
     width: 100%;
     height: 60px;
 }
@@ -31,33 +33,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
-    width: 300px;
+    padding: 0 25px;
     height: 100%;
 }
 
 .ipad-header-left {
+    width: 250px;
+
     & > span {
         padding-right: 10px;
     }
     & > .ipad-clock {
         font-weight: 600;
-        color: #222222;
+        color: #eeeeee;
         cursor: default;
     }
     & > .ipad-date {
         font-weight: 600;
-        color: #222222;
+        color: #eeeeee;
         cursor: default;
     }
 }
 
 .ipad-header-right {
+    width: 100px;
+
     & > svg {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         margin-left: 3px;
-        fill: #222222;
-        stroke: #222222;
+        fill: #eeeeee;
+        stroke: #eeeeee;
+    }
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }

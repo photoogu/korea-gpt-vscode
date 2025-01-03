@@ -1,0 +1,121 @@
+.main-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.main-board-main {
+    box-sizing: border-box;
+    display: flex;
+    flex-grow: 1;
+    padding: 10px 30px 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-logo-1 {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 30px;
+    font-weight: 800;
+    color: #eeeeee;
+    cursor: default;
+}
+
+.main-list-board {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+    & > .board-list-container{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-y: auto;
+        height: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        & > .board-box {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            margin: 0 10px 10px;
+            border-radius: 10px;
+            padding: 15px;
+            width: 350px;
+            height: 250px;
+            color: #222222;
+            background-color: #fafafa;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                box-shadow: 0px 0px 10px 5px #eeeeee44;
+            }
+        }
+    }
+
+}
+
+.main-tag-board {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    height: 100%;
+
+    & > .tag-board-list-container {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border-radius: 35px;
+        padding: 10px;
+        width: 100%;
+        height: 70px;
+        background-color: transparent;
+        font-weight: 600;
+        color: #dbdbdb;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0px 0px 10px 5px #eeeeee44;
+        }
+    }
+}
+
+.boarder-header {
+    & > h1, h2 {
+        margin: 0;
+        cursor: default;
+    }
+
+    & > h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.board-main {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
